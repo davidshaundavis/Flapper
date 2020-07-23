@@ -1,0 +1,71 @@
+/* global  /  reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* game */
+#game {
+    width: 800px;
+    height: 500px;
+    border: 10px solid lightblue;
+    margin: auto;
+    overflow: hidden;
+    background-image: url(bg.jpg);
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* block */
+#block {
+    width: 50px;
+    height: 480px;
+    background-color: blue;
+    position: relative;
+    left: 800px;
+    animation: block 4s infinite linear;
+}
+
+@keyframes block {
+      0%{left: 800px}
+    100%{left: -50px}
+}
+
+
+/* character */
+#character {
+    width: 40px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    left: 400px;
+    background-image: url(flappy.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* hole */
+#hole {
+    position: relative;
+    left: 800px;
+    top: -300px;
+    height: 150px;
+    width: 50px;
+    background-color: lightblue;
+    animation: block 4s infinite linear;
+}
+
+
+
+
+
+
+
+
+
+
